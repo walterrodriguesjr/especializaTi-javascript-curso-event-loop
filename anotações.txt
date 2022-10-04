@@ -22,5 +22,8 @@
 
 //4A-preloader com promises no javascript 
             //CONCEITOS DA AULA 
-                //
+                //testes usando o método '.finally()', que é usado após o catch
     
+
+//5A-javascript async wait       INICIAR
+            //CONCEITOS DA AULA 
