@@ -1,0 +1,26 @@
+//1-teoria
+    //CONCEITOS DA AULA 
+        //promises = certeza que teria um tipo de resposta, sendo um erro ou não 
+
+//1A-introdução ao event loop javascript 
+    //CONCEITOS DA AULA 
+        //simulando chamada de funções de forma assíncrona (usando setTimeout)
+        
+
+//2A-exemplo assíncrono no javascript
+            //CONCEITOS DA AULA 
+                //testando e simulando várias funções encadeadas com setTimeout, trazendo dados 
+
+
+//3A-promises no javascript 
+            //CONCEITOS DA AULA 
+                //trabalahndo com Promises eu tenho a certeza que tenho uma resposta, sendo de sucesso, 
+                    //ou de erro 
+                //feito simulação, chamando 3 promises, as quais por sua vez, chamam outras funções 
+                    //encadeadas 
+
+
+//4A-preloader com promises no javascript 
+            //CONCEITOS DA AULA 
+                //
+    
