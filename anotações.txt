@@ -25,5 +25,35 @@
                 //testes usando o método '.finally()', que é usado após o catch
     
 
-//5A-javascript async wait       INICIAR
+//5A-javascript async wait      
             //CONCEITOS DA AULA 
+                //teste usanso async / await - ele faz com quem o andando do script só prossiga 
+                    //após as funções de async e await sejam executados 
+
+
+2-prática 
+
+1B-preparar projeto javascript-stop event default 
+            //CONCEITOS DA AULA 
+                //configurado o ambiente em HTML e JS até testando event submit chamando alert 
+
+
+2B-consultar API com ajax e Promise javascript
+            //CONCEITOS DA AULA 
+                //realizado testes de requisições de API de CEP via ajax  
+
+
+3B-consultar API com ajax em javascript 
+            //CONCEITOS DA AULA 
+                //realizando novamente as requisições de CEP. porem trazendo dincamicamente 
+                    //para o HTML
+
+
+4B-melhorias projeto busca CEP com AJAX no javascript 
+            //CONCEITO DA AULA 
+                //incluindo preloader e seewt alert 
+
+
+5B-consultar API com ajax com async e await no javascript 
+            CONCEITO DA AULA 
+                //OK

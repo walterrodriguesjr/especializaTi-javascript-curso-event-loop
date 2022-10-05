@@ -1,5 +1,5 @@
 
-const store = () => {
+const getStore = () => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const store = { id: 1, name: 'Magazine XPTO' };
@@ -10,7 +10,7 @@ const store = () => {
     })
 }
 
-const category = (idStore) => {
+const getCategory = (idStore) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const category = { id: 1, title: 'Promoções', store_id: idStore };
@@ -20,7 +20,7 @@ const category = (idStore) => {
     })
 }
 
-const products = (idCategory) => {
+const getProducts = (idCategory) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const products = [
@@ -33,39 +33,17 @@ const products = (idCategory) => {
     })
 }
 
-const start = () => {
+const start = async () => {
 
-    startPreloader()
 
-    store()
-        .then(store => {
-            console.log(store)
-            return category(store.id)
-        })
-        .then(category => {
-            console.log(category)
 
-            return products(category.id)
-        })
-        .then(products => {
-            console.log(products)
-        })
-        .catch(error => {
-            console.log(error)
-        })
-        .finally(() => {
-            endPreloader()
-        });
+    const store = await getStore();
+    console.log(store);
+    const category = await getCategory(store.id);
+    console.log(category);
+    const products = await getProducts(category.id);
+    console.log(products);
 }
 
-const preloader = document.getElementById('preloader');
 
-const startPreloader = () => {
-    console.log("iniciado startPreloader");
-    preloader.style.display = 'block'
-}
-const endPreloader = () => {
-    console.log("iniciado endPreloader");
-    preloader.style.display = 'none'
-}
 
